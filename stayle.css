@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    background: linear-gradient(black,black);
+    height: 100vh;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header {
+    position: fixed;
+    z-index: 100;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    
+}
+header .logo{
+    font-size: 30px;
+    
+}
+header .logo span{
+    color: rgb(216, 99, 255);
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}ul li{
+    margin-right: 30px;
+    cursor: pointer;
+}
+ul li a{
+    padding:6px 15px;
+    border: 2px solid  rgb(131, 1, 175);
+    border-radius: 15px;
+
+}
+
+ul li a:hover , .first{
+    background:  rgb(131, 1, 175);
+    border-radius: 15px;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#200016,transparent);
+}
+
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover ;
+    background-size: cover; 
+    background-position: center; 
+
+}
+
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+
+}
+
+.zozo{
+    color: rgb(255, 255, 255);
+    transform: translateY(-150px);
+}
+.content{
+    color: white;
+    padding: 30px;
+}
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+.content p{
+    color: rgb(205, 205, 205);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    
+    
+}
